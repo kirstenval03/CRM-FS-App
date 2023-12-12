@@ -3,9 +3,9 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./pages/global/TopBar";
 import Sidebar from "./pages/global/Sidebar";
-import Dashboard from "./pages/dashboard";
-// import Team from "./pages/team";
-// import Contacts from "./pages/contacts";
+import AgencyDashboard from "./pages/agency/agencyDash";
+import TeamMembers from "./pages/agency/teamMembers";
+import Customers from "./pages/events/customers";
 // import Bar from "./pages/bar";
 // import Form from "./pages/form";
 // import Line from "./pages/line";
@@ -27,9 +27,9 @@ function App() {
         <Topbar/>
 
         <Routes>
-          <Route path="/" element={<Dashboard/>}/>
-          {/* <Route path="/team" element={<Team/>}/> */}
-          {/* <Route path="/contacts" element={<Contacts/>}/> */}
+          <Route path="/agency-dashboard" element={<AgencyDashboard/>}/>
+          <Route path="/team-members" element={<TeamMembers/>}/> 
+          <Route path="/customers" element={<Customers/>}/> 
           {/* <Route path="/bar" element={<Bar/>}/> */}
           {/* <Route path="/form" element={<Form/>}/> */}
           {/* <Route path="/line" element={<Line/>}/> */}

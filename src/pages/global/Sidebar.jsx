@@ -167,20 +167,20 @@ const Sidebar = () => {
             <Item
               title="Event Dashboard"
               to="/event-dashboard"
-              icon={<EventNoteOutlinedIcon />}
+              icon={<DashboardIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Event Name"
+              title="Event Information"
               to="/event-name"
               icon={<EventNoteOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Contacts Information"
-              to="/contacts-info"
+              title="Customers"
+              to="/customers"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
